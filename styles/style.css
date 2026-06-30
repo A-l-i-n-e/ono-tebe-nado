@@ -7,21 +7,28 @@
 }
 
 .header_menu{
-    display: flex;
-    gap: 32px;
-    justify-self: center;
+    justify-self: start;
 }
+
 .header_links_list{
     display: flex;
-    gap: 34px;
-    margin-left: 33px;
-    margin-top: 6px;
+    align-items: center;
+    gap: 32px;
+    margin:0;
+    padding: 0;
+    font-size:18px;
+    line-height: 100%;
 }
+
 .header_links_list_item_no_bullit{
     list-style: none;
 }
 
 .header_link{
+    color:black;
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0;
     text-decoration: underline;
     font-weight: 400;
     line-height: 100%;
@@ -34,22 +41,39 @@
 
 .header_logo{
     display: block;
-    width: 133px;
-    height: 98px;
+    width: 148px;
+    height: 105px;
+    justify-self: center;
+}
+
+.header_logo_image{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .address{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-self: end;
+    font-family: "Raleway", Arial, sans-serif;
     max-width: 240px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    justify-self: end;
+    font-style: normal;
+    margin: 0;
 }
 
 .address_link{
+    color:black;
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 25px;
     font-style: normal;
+    line-height: 24.3px;
+    text-decoration: underline;
     text-underline-offset: 4px;
 }
 
@@ -59,7 +83,7 @@
     display: block;
     position: relative;
     width: 100%;
-    min-height: 757px;
+    height: 757px;
     background-image: url('../image/lotus-flower.png');
     background-size: cover;
     background-position: center;
@@ -85,21 +109,20 @@
     font-size: 100px;
     line-height: 115%;
     text-transform: uppercase;
+    letter-spacing: 30px;
 }
 
 .cover_description{
     display: flex;
-    gap: 107px;
     align-items: center;
     justify-content: space-between;
-    margin-top: 135px;
+    margin-top: 105px;
     position: relative;
     z-index: 2;
 }
 
 .aligned_text{
     display: block;
-    letter-spacing: 30px;
 }
 
 .aligned_text_left{
@@ -112,10 +135,12 @@
 
 .aligned_text_right{
     text-align: right;
+    letter-spacing: 23px;
 }
 
 .cover_description_text{
     color: white;
+    margin: 0;
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
@@ -136,6 +161,7 @@
 }
 
 /* lots */
+
 .lots{
     padding: 180px 24px 0;
 }
@@ -180,6 +206,7 @@
     z-index: 2;
     color: white;
 }
+
 .card_text {
     position: relative;
     z-index: 2;
@@ -226,7 +253,7 @@
     display: inline-block;
     margin-top: 30px;
     margin-left: 40px;
-    color: white;
+    color: black;
     text-decoration: underline;
     font-weight: 400;
     font-size: 20px;
@@ -239,8 +266,8 @@
 .about {
     display: grid;
     grid-template-columns: 334px 1fr;
-    gap: 49px;
-    padding: 181px 24px 0;
+    column-gap: 25px;
+    padding: 190px 24px 0;
     margin-bottom: 180px;
 }
 
@@ -250,8 +277,8 @@
     align-items: flex-start;
 }
 
-.about_column:last-child {
-    padding-top: 101px;
+.about_column:nth-child(2) {
+    padding-top: 80px;
 }
 
 .about_logo {
@@ -265,7 +292,7 @@
 }
 
 .about_logo_image {
-    width: 148px;
+    width: 260px;
     height: auto;
     display: block;
 }
@@ -288,18 +315,21 @@
     line-height: 24px;
 }
 
+.about_text .p{
+    margin: 0;
+}
+
 /* footer */
 
 .footer {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    align-items: start;
+    align-items: flex-start;
     padding: 0 50px 82px;
 }
 
 .footer .address {
     justify-self: start;
-    max-width: 240px;
 }
 
 .footer_menu{
@@ -336,6 +366,7 @@
 }
 
 .footer_social_icon {
+    display: block;
     width: 48px;
     height: 48px;
 }
